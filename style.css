@@ -1,0 +1,205 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff8ef;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffb84c;
+  padding: 15px 0;
+  text-align: center;
+  box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* === Hero section === */
+.hero {
+  background: url('https://img.freepik.com/premium-photo/happy-young-man-eating-big-burger_8595-820.jpg') center/cover no-repeat;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  background-color: #e67e22;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #cf6e1d;
+}
+
+/* === Меню === */
+main {
+  padding: 30px 10px;
+}
+
+main h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.item {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+  width: 200px;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.item img {
+  width: 100%;
+  height: 140px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.item h3 {
+  margin: 10px 0 5px;
+}
+
+.item p {
+  margin: 0;
+  font-weight: bold;
+  color: #e67e22;
+}
+
+button {
+  margin-top: 10px;
+  padding: 7px 15px;
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #cf6e1d;
+  transform: scale(1.05);
+}
+
+/* === Контакти === */
+.contacts {
+  background-color: #ffe7b3;
+  padding: 30px 0;
+}
+
+.contacts a {
+  color: #e67e22;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contacts a:hover {
+  text-decoration: underline;
+}
+
+/* === Footer === */
+footer {
+  background-color: #ffb84c;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  margin-top: 40px;
+}
+
+/* === Кошик === */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 320px;
+  text-align: left;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+input {
+  width: 95%;
+  padding: 8px;
+  margin: 6px 0;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
