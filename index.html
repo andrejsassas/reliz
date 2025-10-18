@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FastFoodHub 🍟</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>FastFoodHub 🍔</h1>
+    <nav>
+      <a href="#home">Головна</a>
+      <a href="#menu">Меню</a>
+      <a href="#" id="cartBtn">🛒 Кошик (<span id="cartCount">0</span>)</a>
+      <a href="#contacts">Контакти</a>
+    </nav>
+  </header>
+
+  <!-- 🏠 Головна сторінка -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Ласкаво просимо до FastFoodHub!</h2>
+      <p>Смачно, швидко, з любов’ю ❤️</p>
+      <a href="#menu" class="cta-btn">Переглянути меню</a>
+    </div>
+  </section>
+
+  <!-- 🍔 Меню -->
+  <main id="menu">
+    <h2>Наше меню</h2>
+    <div class="menu">
+
+      <div class="item" data-name="Бургер Класик" data-price="120">
+        <img src="https://thespiceway.com/cdn/shop/files/Signature_Savory_Classic_Burger.jpg?v=1712161801" alt="burger">
+        <h3>Бургер Класик</h3>
+        <p>120 грн</p>
+        <button>Додати в кошик</button>
+      </div>
+
+      <div class="item" data-name="Картопля Фрі" data-price="75">
+        <img src="https://molbuk.ua/uploads/posts/2023-12/1702763689_6.jpg" alt="fries">
+        <h3>Картопля Фрі</h3>
+        <p>75 грн</p>
+        <button>Додати в кошик</button>
+      </div>
+
+      <div class="item" data-name="Хот-Дог Нью-Йорк" data-price="95">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpIy0Vuwn7lG6Q36F80uPc8SplAeTsmFysAA&s" alt="hotdog">
+        <h3>Хот-Дог Нью-Йорк</h3>
+        <p>95 грн</p>
+        <button>Додати в кошик</button>
+      </div>
+
+      <div class="item" data-name="Кола 0.5л" data-price="45">
+        <img src="https://vip.shuvar.com/media/catalog/product/cache/178b2511d7a06ad936c489e3e0e2d6f6/N/a/Napiy-Coca-cola-0_5-l.png" alt="cola">
+        <h3>Кола 0.5л</h3>
+        <p>45 грн</p>
+        <button>Додати в кошик</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 📞 Контакти -->
+  <section id="contacts" class="contacts">
+    <h2>Контакти</h2>
+    <p><strong>Телефон:</strong> <a href="tel:0661902334">066 190 2334</a></p>
+    <p><strong>Адреса:</strong> вул. Руська, 299</p>
+    <p>Працюємо щодня з 10:00 до 22:00 🕒</p>
+  </section>
+
+  <footer>
+    <p>© 2025 FastFoodHub — смачно, швидко, з любов’ю ❤️</p>
+  </footer>
+
+  <!-- 🛒 Модальне вікно кошика -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span id="closeCart" class="close">&times;</span>
+      <h2>Ваше замовлення</h2>
+      <div id="cartItems"></div>
+      <p id="totalPrice">Загальна сума: 0 грн</p>
+
+      <h3>Дані для доставки</h3>
+      <input type="text" id="name" placeholder="Ваше ім'я">
+      <input type="text" id="phone" placeholder="Номер телефону">
+      <input type="text" id="address" placeholder="Адреса доставки">
+      <button id="checkoutBtn">Підтвердити замовлення</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
